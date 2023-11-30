@@ -103,12 +103,13 @@ export function NavigationSidebar() {
     <>
       {LinksMenuData.map((menu, index) => (
 
-        <Link href={menu.to} passHref key={index} target="_blank">
+        <Link href={menu.to} passHref key={index} >
           <Button
             as="a"
             variant="menu"
             size="large"
             iconLeft={<IconWrapper icon={menu.icon} />}
+            target="_blank"
           >
             {menu.name}
           </Button>
