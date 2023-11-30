@@ -44,10 +44,10 @@ import { ConnectedWalletButton } from '../ConnectedWalletButton'
 // }
 
 const LinksMenuData = [
-  { name: 'Website', to: 'https://fury.money', icon: <Open /> },
-  { name: 'Wallet', to: 'https://wallet.fury.money', icon: <Open /> },
-  { name: 'Faucet', to: 'https://faucet.fury.money', icon: <Open /> },
-  { name: 'Explorer', to: 'https://blockexplorer.fury.money', icon: <Open /> },
+  { name: 'Website', to: 'https://fury.black', icon: <Open /> },
+  { name: 'Wallet', to: 'https://one.furya.xyz', icon: <Open /> },
+  { name: 'Faucet', to: 'https://faucet.furya.xyz', icon: <Open /> },
+  { name: 'Explorer', to: 'https://explorer.furya.wtf', icon: <Open /> },
   { name: 'Discord', to: process.env.NEXT_PUBLIC_DISCORD_LINK, icon: <Discord /> },
   { name: 'Telegram', to: process.env.NEXT_PUBLIC_TELEGRAM_LINK, icon: <Telegram /> },
   { name: 'Twitter', to: process.env.NEXT_PUBLIC_TWITTER_LINK, icon: <Twitter /> },
