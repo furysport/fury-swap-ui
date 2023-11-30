@@ -4,9 +4,9 @@ import { SVGProps } from 'react'
 export const LogoText = (props: SVGProps<SVGSVGElement>) => {
   const theme = useTheme();
   if (theme.name == 'light')
-    return (<h4 style={{ margin: '0', fontSize: '20px' }}>furyswap</h4>)
+    return (<h4 style={{ margin: '0', fontSize: '20px' }}>Furyswap</h4>)
   else
-    return (<h4 style={{ margin: '0', fontSize: '20px', color: 'white' }}>furyswap</h4>)
+    return (<h4 style={{ margin: '0', fontSize: '20px', color: 'white' }}>Furyswap</h4>)
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

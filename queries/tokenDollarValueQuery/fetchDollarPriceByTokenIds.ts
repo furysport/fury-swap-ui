@@ -20,7 +20,7 @@ export const fetchDollarPriceFromFurySwapPool = debounce(
   async (tokenId: string): Promise<ApiResponse> => {
 
     const response = await fetch(
-      `https://swap.fury.money/api/price/${tokenId}`,
+      `https://swap.furya.xyz/api/price/${tokenId}`,
       {
         method: 'GET',
       }

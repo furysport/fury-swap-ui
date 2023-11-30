@@ -46,7 +46,7 @@ import { ConnectedWalletButton } from '../ConnectedWalletButton'
 const LinksMenuData = [
   { name: 'Website', to: 'https://fury.black', icon: <Open /> },
   { name: 'Wallet', to: 'https://one.furya.xyz', icon: <Open /> },
-  { name: 'Faucet', to: 'https://faucet.furya.xyz', icon: <Open /> },
+  // { name: 'Faucet', to: 'https://faucet.furya.xyz', icon: <Open /> },
   { name: 'Explorer', to: 'https://explorer.furya.wtf', icon: <Open /> },
   { name: 'Discord', to: process.env.NEXT_PUBLIC_DISCORD_LINK, icon: <Discord /> },
   { name: 'Telegram', to: process.env.NEXT_PUBLIC_TELEGRAM_LINK, icon: <Telegram /> },
@@ -89,7 +89,7 @@ export function NavigationSidebar() {
         // marginBottom: '$8',
         backgroundColor: '#AD61D8',
         '&:hover': {
-          backgroundColor: '#BD71E8'
+          backgroundColor: '#FFFFFF'
         }
       }}
     />
@@ -254,7 +254,7 @@ export function NavigationSidebar() {
 
             <Button
               as="a"
-              href="https://fury.money"
+              href="https://fury.black"
               target="__blank"
               icon={
                 <IconWrapper
@@ -335,7 +335,7 @@ export function NavigationSidebar() {
 
           <Button
             as="a"
-            href="https://fury.money"
+            href="https://fury.black"
             target="__blank"
             icon={
               <IconWrapper
