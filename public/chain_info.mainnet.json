@@ -1,0 +1,45 @@
+{
+  "chainId": "furya-1",
+  "chainName": "furya",
+  "rpc": "https://rpc.furya.xyz",
+  "rest": "https://api.furya.xyz",
+  "stakeCurrency": {
+    "coinDenom": "FURY",
+    "coinMinimalDenom": "ufury",
+    "coinDecimals": 6
+  },
+  "bip44": {
+    "coinType": 118
+  },
+  "bech32Config": {
+    "bech32PrefixAccAddr": "furya",
+    "bech32PrefixAccPub": "furyapub",
+    "bech32PrefixValAddr": "furyavaloper",
+    "bech32PrefixValPub": "furyavaloperpub",
+    "bech32PrefixConsAddr": "furyavalcons",
+    "bech32PrefixConsPub": "furyavalconspub"
+  },
+  "currencies": [
+    {
+      "coinDenom": "FURY",
+      "coinMinimalDenom": "ufury",
+      "coinDecimals": 6,
+      "coinGeckoId": "fanfury"
+    }
+  ],
+  "feeCurrencies": [
+    {
+      "coinDenom": "FURY",
+      "coinMinimalDenom": "ufury",
+      "coinDecimals": 6,
+      "coinGeckoId": "fanfury"
+    }
+  ],
+  "coinType": 118,
+  "gasPriceStep": {
+    "low": 0.025,
+    "average": 0.05,
+    "high": 0.1
+  },
+  "features": ["cosmwasm"]
+}

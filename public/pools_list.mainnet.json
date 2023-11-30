@@ -1,0 +1,63 @@
+{
+  "name": "Pools list on mainnet",
+  "logoURI": "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/29231450/Poodle-Standard-Gray-On-White-Standing.jpg",
+  "keywords": ["special tokens"],
+  "tags": {
+    "ProjectName": {
+      "name": "Project",
+      "description": "Tokens that are listed on Project"
+    }
+  },
+  "timestamp": "2021-06-12T00:00:00+00:00",
+  "base_token": {
+    "id": "furya",
+    "chain_id": "furya-1",
+    "token_address": "",
+    "symbol": "FURY",
+    "name": "Fury",
+    "decimals": 6,
+    "logoURI": "https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png",
+    "tags": ["native"],
+    "native": true,
+    "denom": "ufury"
+  },
+  "pools": [
+    {
+      "pool_id": "FURY-USK",
+      "pool_assets": [
+        {
+          "id": "furya",
+          "chain_id": "furya-1",
+          "token_address": "",
+          "symbol": "FURY",
+          "name": "Fury",
+          "decimals": 6,
+          "logoURI": "https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png",
+          "tags": ["native"],
+          "native": true,
+          "denom": "ufury"
+        },
+        {
+          "id": "usk",
+          "chain_id": "furya-1",
+          "token_address": "",
+          "symbol": "USK",
+          "name": "USK",
+          "decimals": 6,
+          "logoURI": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/usk.png",
+          "tags": ["native"],
+          "native": true,
+          "denom": "ibc/093231535A38351AD2FEEFF897D23CF8FE43A44F6EAA3611F55F4B3D62C45014"
+        }
+      ],
+      "swap_address": "furya1xqkp8x4gqwjnhemtemc5dqhwll6w6rrgpywvhka7sh8vz8swul9sy7c430",
+      "staking_address": "",
+      "rewards_tokens": []
+    }
+  ],
+  "version": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "name": "Pools list on testnet",
+  "logoURI": "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/29231450/Poodle-Standard-Gray-On-White-Standing.jpg",
+  "keywords": ["special tokens"],
+  "tags": {
+    "ProjectName": {
+      "name": "Project",
+      "description": "Tokens that are listed on Project"
+    }
+  },
+  "timestamp": "2021-06-12T00:00:00+00:00",
+  "base_token": {
+    "id": "fury",
+    "chain_id": "testfury-3",
+    "token_address": "",
+    "symbol": "TFURY",
+    "name": "Fury",
+    "decimals": 6,
+    "logoURI": "https://cryptologos.cc/logos/anyswap-any-logo.svg?v=022",
+    "tags": ["native"],
+    "native": true,
+    "denom": "utfury"
+  },
+  "pools": [
+    {
+      "pool_id": "FURY-xFURY",
+      "pool_assets": [
+        {
+          "id": "fury",
+          "chain_id": "testfury-3",
+          "token_address": "",
+          "symbol": "TFURY",
+          "name": "Fury",
+          "decimals": 6,
+          "logoURI": "https://github.com/Sirius198/furyswap-icons/blob/main/crypto/fury.png?raw=true",
+          "tags": ["native"],
+          "native": true,
+          "denom": "utfury"
+        },
+        {
+          "id": "fury-doge",
+          "chain_id": "testfury-3",
+          "token_address": "fury153e2w8u77h4ytrhgry846k5t8n9uea8xqesl66elqgls0lqwsz0q5q0vck",
+          "symbol": "xFURY",
+          "name": "DogeFury",
+          "decimals": 6,
+          "logoURI": "https://github.com/Sirius198/furyswap-icons/blob/main/crypto/xfury.png?raw=true",
+          "tags": ["memecoin"],
+          "native": false,
+          "denom": "xfury"
+        },
+        {
+          "id": "fury-swap",
+          "chain_id": "testfury-3",
+          "token_address": "fury1sslrhe0vthvnykwp2gz89rxx0kuaghstrpm6mtvfj6qszppd5g2qz5hedc",
+          "symbol": "MSWAP",
+          "name": "mswap",
+          "decimals": 6,
+          "logoURI": "/mswap.png",
+          "tags": ["memecoin"],
+          "native": false,
+          "denom": "umswap"
+        }
+      ],
+      "swap_address": "fury1guczj53xxl4347adagh23eelyhnxvugw2nqq0q0dr6kws7q35jyq4t3kxp",
+      "staking_address": "fury14wyesxwny7hu67vk93ea4gsmdeajt894lz7fycn6qn2a4nt8qk3scju99p",
+      "rewards_tokens": [
+        {
+          "rewards_address": "fury1vtyeq4fg79ysh5gr0r67hjx6msjrdjl60t2njskkjxkutcujzwmqzl6sxl",
+
+          "id": "fury-swap",
+          "symbol": "MSWAP",
+          "name": "mswap",
+          "logoURI": "/mswap.png",
+          "decimals": 6,
+          "native": false,
+          "denom": "umswap"
+        }
+      ]
+    }
+  ],
+  "version": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  }
+}
