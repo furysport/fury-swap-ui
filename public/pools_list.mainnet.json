@@ -38,7 +38,7 @@
           "denom": "ufury"
         },
         {
-          "id": "usk-fury",
+          "id": "usk",
           "chain_id": "furya-1",
           "token_address": "",
           "symbol": "USK",

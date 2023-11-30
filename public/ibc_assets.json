@@ -5,13 +5,13 @@
       "name": "USK",
       "symbol": "USK",
       "chain_id": "kaiyo-1",
-      "rpc": "https://rpc-kujira.starsquid.io",
+      "rpc": "https://rpc-kujira.capybaralabs.com",
       "denom": "uusk",
       "decimals": 6,
       "channel": "channel-119",
       "fury_channel": "channel-0",
       "fury_denom": "ibc/093231535A38351AD2FEEFF897D23CF8FE43A44F6EAA3611F55F4B3D62C45014",
-      "logoURI": "https://github.com/cosmos/chain-registry/blob/master/axelar/images/usk.png?raw=true"
+      "logoURI": "https://github.com/cosmos/chain-registry/blob/master/kujira/images/usk.png?raw=true"
     }
   ]
 }
