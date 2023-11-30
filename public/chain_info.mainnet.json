@@ -1,38 +1,38 @@
 {
-  "chainId": "mun-1",
-  "chainName": "mun",
-  "rpc": "https://mainnet1rpc.mun.money",
-  "rest": "https://mainnet1.mun.money",
+  "chainId": "furya-1",
+  "chainName": "furya",
+  "rpc": "https://rpc.furya.xyz",
+  "rest": "https://api.furya.xyz",
   "stakeCurrency": {
-    "coinDenom": "MUN",
-    "coinMinimalDenom": "umun",
+    "coinDenom": "FURY",
+    "coinMinimalDenom": "ufury",
     "coinDecimals": 6
   },
   "bip44": {
     "coinType": 118
   },
   "bech32Config": {
-    "bech32PrefixAccAddr": "mun",
-    "bech32PrefixAccPub": "munpub",
-    "bech32PrefixValAddr": "munvaloper",
-    "bech32PrefixValPub": "munvaloperpub",
-    "bech32PrefixConsAddr": "munvalcons",
-    "bech32PrefixConsPub": "munvalconspub"
+    "bech32PrefixAccAddr": "furya",
+    "bech32PrefixAccPub": "furyapub",
+    "bech32PrefixValAddr": "furyavaloper",
+    "bech32PrefixValPub": "furyavaloperpub",
+    "bech32PrefixConsAddr": "furyavalcons",
+    "bech32PrefixConsPub": "furyavalconspub"
   },
   "currencies": [
     {
-      "coinDenom": "MUN",
-      "coinMinimalDenom": "umun",
+      "coinDenom": "FURY",
+      "coinMinimalDenom": "ufury",
       "coinDecimals": 6,
-      "coinGeckoId": "mun-network"
+      "coinGeckoId": "fanfury"
     }
   ],
   "feeCurrencies": [
     {
-      "coinDenom": "MUN",
-      "coinMinimalDenom": "umun",
+      "coinDenom": "FURY",
+      "coinMinimalDenom": "ufury",
       "coinDecimals": 6,
-      "coinGeckoId": "mun-network"
+      "coinGeckoId": "fanfury"
     }
   ],
   "coinType": 118,

@@ -10,79 +10,47 @@
   },
   "timestamp": "2021-06-12T00:00:00+00:00",
   "base_token": {
-    "id": "mun-network",
-    "chain_id": "mun-1",
+    "id": "furya",
+    "chain_id": "furya-1",
     "token_address": "",
-    "symbol": "MUN",
-    "name": "Mun",
+    "symbol": "FURY",
+    "name": "Fury",
     "decimals": 6,
-    "logoURI": "https://cryptologos.cc/logos/anyswap-any-logo.svg?v=022",
+    "logoURI": "https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png",
     "tags": ["native"],
     "native": true,
-    "denom": "umun"
+    "denom": "ufury"
   },
   "pools": [
     {
-      "pool_id": "MUN-DGM",
+      "pool_id": "FURY-USK",
       "pool_assets": [
         {
-          "id": "mun-network",
-          "chain_id": "mun-1",
+          "id": "furya",
+          "chain_id": "furya-1",
           "token_address": "",
-          "symbol": "MUN",
-          "name": "Mun",
+          "symbol": "FURY",
+          "name": "Fury",
           "decimals": 6,
-          "logoURI": "https://github.com/Sirius198/munswap-icons/blob/main/crypto/mun.png?raw=true",
+          "logoURI": "https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png",
           "tags": ["native"],
           "native": true,
-          "denom": "umun"
+          "denom": "ufury"
         },
         {
-          "id": "mun-dgm",
-          "chain_id": "mun-1",
-          "token_address": "mun1stwdtk6ja0705v8qmtukcp4vd422p5vy4jr5wdc4qk44c57k955qex03yg",
-          "symbol": "DGM",
-          "name": "DogeMun",
-          "decimals": 6,
-          "logoURI": "https://github.com/Sirius198/munswap-icons/blob/main/crypto/dgm.png?raw=true",
-          "tags": ["memecoin"],
-          "native": false,
-          "denom": "dgm"
-        }
-      ],
-      "swap_address": "mun1fh0hm98gkd96rx3w92ea2wm45q85eu9g3hqvx2p968ppfqv392vsw2eqzw",
-      "staking_address": "",
-      "rewards_tokens": []
-    },
-    {
-      "pool_id": "MUN-USDC",
-      "pool_assets": [
-        {
-          "id": "mun-network",
-          "chain_id": "mun-1",
+          "id": "usk-fury",
+          "chain_id": "furya-1",
           "token_address": "",
-          "symbol": "MUN",
-          "name": "Mun",
+          "symbol": "USK",
+          "name": "USK",
           "decimals": 6,
-          "logoURI": "https://github.com/Sirius198/munswap-icons/blob/main/crypto/mun.png?raw=true",
+          "logoURI": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/usk.png",
           "tags": ["native"],
           "native": true,
-          "denom": "umun"
-        },
-        {
-          "id": "axlusdc",
-          "chain_id": "mun-1",
-          "token_address": "",
-          "symbol": "USDC",
-          "name": "USDC",
-          "decimals": 6,
-          "logoURI": "https://raw.githubusercontent.com/cosmos/chain-registry/18cfb9fdf626443b0569ce4f28acc9eab02030b8/axelar/images/usdc.svg",
-          "tags": ["native"],
-          "native": true,
-          "denom": "ibc/FA7775734CC73176B7425910DE001A1D2AD9B6D9E93129A5D0750EAD13E4E63A"
+          "denom": "ibc/093231535A38351AD2FEEFF897D23CF8FE43A44F6EAA3611F55F4B3D62C45014"
         }
       ],
-      "swap_address": "mun187zds75uenfxht2zqz7e0wxn3ushcawvf2ndrns6q63hgfn6ptqq7p9z9c",
+      "swap_address": "furya1xqkp8x4gqwjnhemtemc5dqhwll6w6rrgpywvhka7sh8vz8swul9sy7c430",
       "staking_address": "",
       "rewards_tokens": []
     }

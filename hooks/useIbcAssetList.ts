@@ -8,8 +8,8 @@ export type IBCAssetInfo = {
   rpc: string
   denom: string
   decimals: number
-  mun_denom: string
-  mun_channel: string
+  fury_denom: string
+  fury_channel: string
   channel: string
   logoURI: string
   deposit_gas_fee?: number

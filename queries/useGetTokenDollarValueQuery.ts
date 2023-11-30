@@ -32,9 +32,9 @@ export const useGetTokenDollarValueQuery = () => {
         })
       )?.price
 
-      if (tokenInfo.id == 'mun-swap') {
+      if (tokenInfo.id == 'fury-swap') {
         // todo: hardcoded
-        // maybe make a pool of TMUN and MSWAP
+        // maybe make a pool of TFURY and MSWAP
         return 0.01 * tokenAmountInDenom;
       }
 

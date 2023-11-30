@@ -97,10 +97,10 @@ export const useTransferAssetMutation = ({
             tokenAmount,
             tokenInfo.decimals
           ).toString(),
-          denom: tokenInfo.mun_denom,
+          denom: tokenInfo.fury_denom,
         },
         'transfer',
-        tokenInfo.mun_channel,
+        tokenInfo.fury_channel,
         undefined,
         timeout,
         '',

@@ -44,10 +44,10 @@ import { ConnectedWalletButton } from '../ConnectedWalletButton'
 // }
 
 const LinksMenuData = [
-  { name: 'Website', to: 'https://mun.money', icon: <Open /> },
-  { name: 'Wallet', to: 'https://wallet.mun.money', icon: <Open /> },
-  { name: 'Faucet', to: 'https://faucet.mun.money', icon: <Open /> },
-  { name: 'Explorer', to: 'https://blockexplorer.mun.money', icon: <Open /> },
+  { name: 'Website', to: 'https://fury.money', icon: <Open /> },
+  { name: 'Wallet', to: 'https://wallet.fury.money', icon: <Open /> },
+  { name: 'Faucet', to: 'https://faucet.fury.money', icon: <Open /> },
+  { name: 'Explorer', to: 'https://blockexplorer.fury.money', icon: <Open /> },
   { name: 'Discord', to: process.env.NEXT_PUBLIC_DISCORD_LINK, icon: <Discord /> },
   { name: 'Telegram', to: process.env.NEXT_PUBLIC_TELEGRAM_LINK, icon: <Telegram /> },
   { name: 'Twitter', to: process.env.NEXT_PUBLIC_TWITTER_LINK, icon: <Twitter /> },
@@ -254,7 +254,7 @@ export function NavigationSidebar() {
 
             <Button
               as="a"
-              href="https://mun.money"
+              href="https://fury.money"
               target="__blank"
               icon={
                 <IconWrapper
@@ -335,7 +335,7 @@ export function NavigationSidebar() {
 
           <Button
             as="a"
-            href="https://mun.money"
+            href="https://fury.money"
             target="__blank"
             icon={
               <IconWrapper

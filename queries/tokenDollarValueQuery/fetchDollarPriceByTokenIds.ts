@@ -16,11 +16,11 @@ export const fetchDollarPriceByTokenIds = debounce(
   100
 )
 
-export const fetchDollarPriceFromMunSwapPool = debounce(
+export const fetchDollarPriceFromFurySwapPool = debounce(
   async (tokenId: string): Promise<ApiResponse> => {
 
     const response = await fetch(
-      `https://swap.mun.money/api/price/${tokenId}`,
+      `https://swap.fury.money/api/price/${tokenId}`,
       {
         method: 'GET',
       }

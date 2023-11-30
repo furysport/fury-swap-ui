@@ -116,7 +116,7 @@ export default function Transfer() {
         <StyledWrapper>
           <PageHeader
             title="IBC Transfer"
-            subtitle="Easily and quickly initiate transfers across IBC from Cosmos Hub, Juno, Kava and others. Here you can send for example USDC and USDX from other chains to MUN Blockchain."
+            subtitle="Easily and quickly initiate transfers across IBC from Cosmos Hub, Juno, Kava and others. Here you can send for example USK and USDX from other chains to FURY Blockchain."
           />
           <AssetsList onActionClick={handleAssetCardActionClick} />
         </StyledWrapper>

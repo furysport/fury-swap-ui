@@ -1,4 +1,4 @@
-## Munswap interface
+## Furyswap interface
 
 An open-source interface for a CosmWasm decentralized exchange.
 

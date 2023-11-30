@@ -2,7 +2,7 @@ import poolData from 'public/pools_list.mainnet.json'
 import { rpc } from 'public/chain_info.mainnet.json'
 import { CosmWasmClient } from "@cosmjs/cosmwasm-stargate"
 
-const STABLECOIN_POOLS = ['MUN-USDC']
+const STABLECOIN_POOLS = ['FURY-USK']
 
 export async function getPoolRatio(pool_id: string): Promise<number> {
     const pool = poolData.pools.find(p => p.pool_id == pool_id)
@@ -21,7 +21,7 @@ export async function getPoolRatio(pool_id: string): Promise<number> {
     return 0
 }
 
-export async function get_MUN_USD_Price(): Promise<number> {
+export async function get_FURY_USD_Price(): Promise<number> {
     let sum = 0
     for (let i = 0;i < STABLECOIN_POOLS.length;i++) {
         sum += await getPoolRatio(STABLECOIN_POOLS[i])
@@ -29,12 +29,12 @@ export async function get_MUN_USD_Price(): Promise<number> {
     return sum / STABLECOIN_POOLS.length
 }
 
-export async function get_DGM_USD_Price(): Promise<number> {
-    const ratio = await getPoolRatio('MUN-DGM')
+export async function get_xFURY_USD_Price(): Promise<number> {
+    const ratio = await getPoolRatio('FURY-xFURY')
     if (ratio == 0) {
         return 0
     }
-    const mun_usd_price = await get_MUN_USD_Price()
-    const dgm_price = (mun_usd_price / ratio).toPrecision(6)
-    return Number(dgm_price)
+    const fury_usd_price = await get_FURY_USD_Price()
+    const xfury_price = (fury_usd_price / ratio).toPrecision(6)
+    return Number(xfury_price)
 }

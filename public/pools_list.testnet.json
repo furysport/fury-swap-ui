@@ -10,49 +10,49 @@
   },
   "timestamp": "2021-06-12T00:00:00+00:00",
   "base_token": {
-    "id": "mun-network",
-    "chain_id": "testmun-3",
+    "id": "furya",
+    "chain_id": "testfury-3",
     "token_address": "",
-    "symbol": "TMUN",
-    "name": "Mun",
+    "symbol": "TFURY",
+    "name": "Fury",
     "decimals": 6,
     "logoURI": "https://cryptologos.cc/logos/anyswap-any-logo.svg?v=022",
     "tags": ["native"],
     "native": true,
-    "denom": "utmun"
+    "denom": "utfury"
   },
   "pools": [
     {
-      "pool_id": "MUN-DGM",
+      "pool_id": "FURY-xFURY",
       "pool_assets": [
         {
-          "id": "mun-network",
-          "chain_id": "testmun-3",
+          "id": "furya",
+          "chain_id": "testfury-3",
           "token_address": "",
-          "symbol": "TMUN",
-          "name": "Mun",
+          "symbol": "TFURY",
+          "name": "Fury",
           "decimals": 6,
-          "logoURI": "https://github.com/Sirius198/munswap-icons/blob/main/crypto/mun.png?raw=true",
+          "logoURI": "https://github.com/Sirius198/furyswap-icons/blob/main/crypto/fury.png?raw=true",
           "tags": ["native"],
           "native": true,
-          "denom": "utmun"
+          "denom": "utfury"
         },
         {
-          "id": "mun-doge",
-          "chain_id": "testmun-3",
-          "token_address": "mun153e2w8u77h4ytrhgry846k5t8n9uea8xqesl66elqgls0lqwsz0q5q0vck",
-          "symbol": "DGM",
-          "name": "DogeMun",
+          "id": "fury-doge",
+          "chain_id": "testfury-3",
+          "token_address": "fury153e2w8u77h4ytrhgry846k5t8n9uea8xqesl66elqgls0lqwsz0q5q0vck",
+          "symbol": "xFURY",
+          "name": "DogeFury",
           "decimals": 6,
-          "logoURI": "https://github.com/Sirius198/munswap-icons/blob/main/crypto/dgm.png?raw=true",
+          "logoURI": "https://github.com/Sirius198/furyswap-icons/blob/main/crypto/xfury.png?raw=true",
           "tags": ["memecoin"],
           "native": false,
-          "denom": "dgm"
+          "denom": "xfury"
         },
         {
-          "id": "mun-swap",
-          "chain_id": "testmun-3",
-          "token_address": "mun1sslrhe0vthvnykwp2gz89rxx0kuaghstrpm6mtvfj6qszppd5g2qz5hedc",
+          "id": "fury-swap",
+          "chain_id": "testfury-3",
+          "token_address": "fury1sslrhe0vthvnykwp2gz89rxx0kuaghstrpm6mtvfj6qszppd5g2qz5hedc",
           "symbol": "MSWAP",
           "name": "mswap",
           "decimals": 6,
@@ -62,13 +62,13 @@
           "denom": "umswap"
         }
       ],
-      "swap_address": "mun1guczj53xxl4347adagh23eelyhnxvugw2nqq0q0dr6kws7q35jyq4t3kxp",
-      "staking_address": "mun14wyesxwny7hu67vk93ea4gsmdeajt894lz7fycn6qn2a4nt8qk3scju99p",
+      "swap_address": "fury1guczj53xxl4347adagh23eelyhnxvugw2nqq0q0dr6kws7q35jyq4t3kxp",
+      "staking_address": "fury14wyesxwny7hu67vk93ea4gsmdeajt894lz7fycn6qn2a4nt8qk3scju99p",
       "rewards_tokens": [
         {
-          "rewards_address": "mun1vtyeq4fg79ysh5gr0r67hjx6msjrdjl60t2njskkjxkutcujzwmqzl6sxl",
+          "rewards_address": "fury1vtyeq4fg79ysh5gr0r67hjx6msjrdjl60t2njskkjxkutcujzwmqzl6sxl",
 
-          "id": "mun-swap",
+          "id": "fury-swap",
           "symbol": "MSWAP",
           "name": "mswap",
           "logoURI": "/mswap.png",

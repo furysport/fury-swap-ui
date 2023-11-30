@@ -7,7 +7,7 @@ export const TokenOptionsList = ({
   ...props
 }: Omit<TokenSelectListProps, 'tokenList' | 'fetchingBalanceMode'>) => {
   const [tokenList] = useTokenList()
-  // const nonIBCTokens = tokenList.tokens.filter(token => token.symbol == 'MUN' || token.symbol == 'DGM')
+  // const nonIBCTokens = tokenList.tokens.filter(token => token.symbol == 'FURY' || token.symbol == 'xFURY')
   return (
     <TokenSelectList
       {...props}

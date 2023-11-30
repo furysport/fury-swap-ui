@@ -19,7 +19,7 @@ export const instantiateCW20Contract = async ({
 
 	// const initMsg = msg
 	const codeId = Number(DEFAULT_CW20_CODE_ID)
-	const label = 'MunSwap-CW20-Label'
+	const label = 'FurySwap-CW20-Label'
 
 	return await client.instantiate(senderAddress, codeId, initMsg, label, "auto")
 };

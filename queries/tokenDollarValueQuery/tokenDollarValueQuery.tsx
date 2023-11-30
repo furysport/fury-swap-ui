@@ -1,6 +1,6 @@
 import { TokenInfo } from 'queries/usePoolsListQuery'
 
-import { fetchDollarPriceByTokenIds, fetchDollarPriceFromMunSwapPool } from './fetchDollarPriceByTokenIds'
+import { fetchDollarPriceByTokenIds, fetchDollarPriceFromFurySwapPool } from './fetchDollarPriceByTokenIds'
 import { pricingServiceIsDownAlert } from './pricingServiceIsDownAlert'
 
 export async function tokenDollarValueQuery(tokenIds: Array<TokenInfo['id']>) {
@@ -11,15 +11,15 @@ export async function tokenDollarValueQuery(tokenIds: Array<TokenInfo['id']>) {
   try {
     let prices = await fetchDollarPriceByTokenIds(tokenIds)
 
-    // todo: usd prices for mun tokens are hardcoded for test purpose since they are not registered on coingecko
-    if (tokenIds.findIndex((tokenId) => tokenId === 'mun-network') != -1) {
-      let mun_price = await fetchDollarPriceFromMunSwapPool('mun-network');
-      prices = { ...prices, ...mun_price }
+    // todo: usd prices for fury tokens are hardcoded for test purpose since they are not registered on coingecko
+    if (tokenIds.findIndex((tokenId) => tokenId === 'furya') != -1) {
+      let fury_price = await fetchDollarPriceFromFurySwapPool('furya');
+      prices = { ...prices, ...fury_price }
     }
 
-    if (tokenIds.findIndex((tokenId) => tokenId === 'mun-dgm') != -1) {
-      let dgm_price = await fetchDollarPriceFromMunSwapPool('mun-dgm');
-      prices = { ...prices, ...dgm_price }
+    if (tokenIds.findIndex((tokenId) => tokenId === 'fury-xfury') != -1) {
+      let xfury_price = await fetchDollarPriceFromFurySwapPool('fury-xfury');
+      prices = { ...prices, ...xfury_price }
     }
 
     // console.log(prices)

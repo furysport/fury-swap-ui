@@ -119,7 +119,7 @@ export const AssetsList = ({ onActionClick }) => {
           borderBottom: '1px solid $borderColors$inactive',
         }}
       >
-        Ensure your wallet holds at least 0.1 MUN for IBC transfers. This is necessary to cover potential network transaction fees and to ensure the transfer is processed smoothly. Claim the faucet <a href='https://faucet.mun.money' target='_blank' style={{color: '#8f8'}}>here</a>
+        Ensure your wallet holds at least 0.1 FURY for IBC transfers. This is necessary to cover potential network transaction fees and to ensure the transfer is processed smoothly. Claim the faucet <a href='https://faucet.fury.money' target='_blank' style={{color: '#8f8'}}>here</a>
       </Text>
     </>
   )
