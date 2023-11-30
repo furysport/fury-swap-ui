@@ -10,7 +10,7 @@
   },
   "timestamp": "2021-06-12T00:00:00+00:00",
   "base_token": {
-    "id": "furya",
+    "id": "fury",
     "chain_id": "furya-1",
     "token_address": "",
     "symbol": "FURY",
@@ -26,7 +26,7 @@
       "pool_id": "FURY-USK",
       "pool_assets": [
         {
-          "id": "furya",
+          "id": "fury",
           "chain_id": "furya-1",
           "token_address": "",
           "symbol": "FURY",
@@ -50,7 +50,7 @@
           "denom": "ibc/093231535A38351AD2FEEFF897D23CF8FE43A44F6EAA3611F55F4B3D62C45014"
         }
       ],
-      "swap_address": "furya1xqkp8x4gqwjnhemtemc5dqhwll6w6rrgpywvhka7sh8vz8swul9sy7c430",
+      "swap_address": "fury1xqkp8x4gqwjnhemtemc5dqhwll6w6rrgpywvhka7sh8vz8swul9sy7c430",
       "staking_address": "",
       "rewards_tokens": []
     }

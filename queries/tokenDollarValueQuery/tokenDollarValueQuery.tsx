@@ -12,8 +12,8 @@ export async function tokenDollarValueQuery(tokenIds: Array<TokenInfo['id']>) {
     let prices = await fetchDollarPriceByTokenIds(tokenIds)
 
     // todo: usd prices for fury tokens are hardcoded for test purpose since they are not registered on coingecko
-    if (tokenIds.findIndex((tokenId) => tokenId === 'furya') != -1) {
-      let fury_price = await fetchDollarPriceFromFurySwapPool('furya');
+    if (tokenIds.findIndex((tokenId) => tokenId === 'fury') != -1) {
+      let fury_price = await fetchDollarPriceFromFurySwapPool('fury');
       prices = { ...prices, ...fury_price }
     }
 

@@ -24,7 +24,7 @@
       "coinDenom": "TFURY",
       "coinMinimalDenom": "utfury",
       "coinDecimals": 6,
-      "coinGeckoId": "furya"
+      "coinGeckoId": "fury"
     }
   ],
   "feeCurrencies": [
@@ -32,7 +32,7 @@
       "coinDenom": "TFURY",
       "coinMinimalDenom": "utfury",
       "coinDecimals": 6,
-      "coinGeckoId": "furya"
+      "coinGeckoId": "fury"
     }
   ],
   "coinType": 118,

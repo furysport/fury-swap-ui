@@ -10,7 +10,7 @@
   },
   "timestamp": "2021-06-12T00:00:00+00:00",
   "base_token": {
-    "id": "furya",
+    "id": "fury",
     "chain_id": "testfury-3",
     "token_address": "",
     "symbol": "TFURY",
@@ -26,7 +26,7 @@
       "pool_id": "FURY-xFURY",
       "pool_assets": [
         {
-          "id": "furya",
+          "id": "fury",
           "chain_id": "testfury-3",
           "token_address": "",
           "symbol": "TFURY",
