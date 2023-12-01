@@ -1,17 +1,30 @@
 {
   "tokens": [
     {
-      "id": "usk",
+      "id": "usk-fury",
       "name": "USK",
       "symbol": "USK",
       "chain_id": "kaiyo-1",
-      "rpc": "https://rpc-kujira.capybaralabs.com",
+      "rpc": "https://rpc-kujira.starsquid.io",
       "denom": "uusk",
       "decimals": 6,
       "channel": "channel-119",
       "fury_channel": "channel-0",
       "fury_denom": "ibc/093231535A38351AD2FEEFF897D23CF8FE43A44F6EAA3611F55F4B3D62C45014",
-      "logoURI": "https://github.com/cosmos/chain-registry/blob/master/kujira/images/usk.png?raw=true"
+      "logoURI": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/usk.png"
+    },
+    {
+      "id": "usdc-fury",
+      "name": "USDC",
+      "symbol": "USDC",
+      "chain_id": "noble-1",
+      "rpc": "https://noble-rpc.polkachu.com",
+      "denom": "uusdc",
+      "decimals": 6,
+      "channel": "channel-42",
+      "fury_channel": "channel-4",
+      "fury_denom": "ibc/BFF0D3805B50D93E2FA5C0B2DDF7E0B30A631076CD80BC12A48C0E95404B4A41",
+      "logoURI": "https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png"
     }
   ]
 }
