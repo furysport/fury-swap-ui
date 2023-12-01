@@ -128,6 +128,7 @@ export function NavigationSidebar() {
             variant="menu"
             size="large"
             iconLeft={<IconWrapper icon={menu.icon} />}
+            target="_blank"
           >
             {menu.name}
           </Button>
