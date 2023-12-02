@@ -85,6 +85,38 @@
       "swap_address": "furya14n45jftyuhdxvl4t7lve5jsmzx0n92wnph6m6h73m8emsq9p6qqsa4zfh7",
       "staking_address": "",
       "rewards_tokens": []
+    },
+    {
+      "pool_id": "FURY-JUNO",
+      "pool_assets": [
+        {
+          "id": "furya",
+          "chain_id": "furya-1",
+          "token_address": "",
+          "symbol": "FURY",
+          "name": "Fury",
+          "decimals": 6,
+          "logoURI": "https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png",
+          "tags": ["native"],
+          "native": true,
+          "denom": "ufury"
+        },
+        {
+          "id": "fury-juno",
+          "chain_id": "furya-1",
+          "token_address": "",
+          "symbol": "JUNO",
+          "name": "JUNO",
+          "decimals": 6,
+          "logoURI": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png",
+          "tags": ["native"],
+          "native": true,
+          "denom": "ibc/4CD525F166D32B0132C095F353F4C6F033B0FF5C49141470D1EFDA1D63303D04"
+        }
+      ],
+      "swap_address": "furya143c4juy87pczaznla7n4742ssvumgs4mnqz0sptrhmynda2a4qkqqtte48",
+      "staking_address": "",
+      "rewards_tokens": []
     }
   ],
   "version": {

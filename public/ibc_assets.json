@@ -25,6 +25,19 @@
       "fury_channel": "channel-4",
       "fury_denom": "ibc/BFF0D3805B50D93E2FA5C0B2DDF7E0B30A631076CD80BC12A48C0E95404B4A41",
       "logoURI": "https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.png"
+    },
+    {
+      "id": "juno-fury",
+      "name": "JUNO",
+      "symbol": "JUNO",
+      "chain_id": "juno-1",
+      "rpc": "https://rpc-juno.whispernode.com:443",
+      "denom": "ujuno",
+      "decimals": 6,
+      "channel": "channel-417",
+      "fury_channel": "channel-2",
+      "fury_denom": "ibc/4CD525F166D32B0132C095F353F4C6F033B0FF5C49141470D1EFDA1D63303D04",
+      "logoURI": "https://raw.githubusercontent.com/cosmos/chain-registry/master/juno/images/juno.png"
     }
   ]
 }
