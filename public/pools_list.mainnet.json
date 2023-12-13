@@ -14,7 +14,7 @@
     "chain_id": "furya-1",
     "token_address": "",
     "symbol": "FURY",
-    "name": "FURY",
+    "name": "Fury",
     "decimals": 6,
     "logoURI": "https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png",
     "tags": ["native"],
@@ -30,7 +30,7 @@
           "chain_id": "furya-1",
           "token_address": "",
           "symbol": "FURY",
-          "name": "FURY",
+          "name": "Fury",
           "decimals": 6,
           "logoURI": "https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png",
           "tags": ["native"],
@@ -51,8 +51,20 @@
         }
       ],
       "swap_address": "furya1xqkp8x4gqwjnhemtemc5dqhwll6w6rrgpywvhka7sh8vz8swul9sy7c430",
-      "staking_address": "",
-      "rewards_tokens": []
+      "staking_address": "furya19pxu27yh84zm8lgm9h75kg0m9e22u36yac0swngwq633xyqfz47sndff6n",
+      "rewards_tokens": [
+        {
+          "rewards_address": "furya1v5t3xuu4yly0pxr87w93rkd40a4t66m8wm4yy7mymwlddm2mythqjc648j",
+
+          "id": "furya",
+          "symbol": "FURY",
+          "name": "Fury",
+          "logoURI": "https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png",
+          "decimals": 6,
+          "native": false,
+          "denom": "ufury"
+        }
+      ]
     },
     {
       "pool_id": "FURY-USDC",
@@ -62,7 +74,7 @@
           "chain_id": "furya-1",
           "token_address": "",
           "symbol": "FURY",
-          "name": "FURY",
+          "name": "Fury",
           "decimals": 6,
           "logoURI": "https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png",
           "tags": ["native"],
@@ -82,7 +94,7 @@
           "denom": "ibc/BFF0D3805B50D93E2FA5C0B2DDF7E0B30A631076CD80BC12A48C0E95404B4A41"
         }
       ],
-      "swap_address": "furya14n45jftyuhdxvl4t7lve5jsmzx0n92wnph6m6h73m8emsq9p6qqsa4zfh7",
+      "swap_address": "furya167xst2jy9n6u92t3n8hf762adtpe3cs6acsgn0w5n2xlz9hv3xgsn2z80j",
       "staking_address": "",
       "rewards_tokens": []
     },
@@ -94,7 +106,7 @@
           "chain_id": "furya-1",
           "token_address": "",
           "symbol": "FURY",
-          "name": "FURY",
+          "name": "Fury",
           "decimals": 6,
           "logoURI": "https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png",
           "tags": ["native"],
