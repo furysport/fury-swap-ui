@@ -94,11 +94,11 @@
           "denom": "ibc/BFF0D3805B50D93E2FA5C0B2DDF7E0B30A631076CD80BC12A48C0E95404B4A41"
         }
       ],
-      "swap_address": "furya167xst2jy9n6u92t3n8hf762adtpe3cs6acsgn0w5n2xlz9hv3xgsn2z80j",
-      "staking_address": "furya1ga2sc3n7yaaw2kvx6ah780tt9g90w499x3u6mgzxlt0jtp3qtd5sv47c7p",
+      "swap_address": "furya14n45jftyuhdxvl4t7lve5jsmzx0n92wnph6m6h73m8emsq9p6qqsa4zfh7",
+      "staking_address": "furya15zzffsmue2myfdv8mmmeuuxkh7ne0fp8krc0rr794qy430e3285qt8yn4q",
       "rewards_tokens": [
         {
-          "rewards_address": "furya1rkl69rec06skuf0rn2psw5sjrtumnlhfyty2kfnygcc90eqekcksefs5gp",
+          "rewards_address": "furya132xsyfmxk2z2l94e93q95qqputc9euha38kqphzatp7as6qw7f6qx6fu2f",
 
           "id": "furya",
           "symbol": "FURY",
