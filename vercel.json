@@ -1,1 +1,7 @@
-{ "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }] }
+{
+    "routes": [
+      { "src": "/api/price/fury", "dest": "/Pages/api/price/fury.tsx" },
+      { "src": "/[^.]+", "dest": "/", "status": 200 }
+    ]
+  }
+  
