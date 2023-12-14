@@ -10,7 +10,7 @@
   },
   "timestamp": "2021-06-12T00:00:00+00:00",
   "base_token": {
-    "id": "furya",
+    "id": "fanfury",
     "chain_id": "furya-1",
     "token_address": "",
     "symbol": "FURY",
@@ -26,7 +26,7 @@
       "pool_id": "FURY-USK",
       "pool_assets": [
         {
-          "id": "furya",
+          "id": "fanfury",
           "chain_id": "furya-1",
           "token_address": "",
           "symbol": "FURY",
@@ -56,7 +56,7 @@
         {
           "rewards_address": "furya1v5t3xuu4yly0pxr87w93rkd40a4t66m8wm4yy7mymwlddm2mythqjc648j",
 
-          "id": "furya",
+          "id": "fanfury",
           "symbol": "FURY",
           "name": "Fury",
           "logoURI": "https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png",
@@ -70,7 +70,7 @@
       "pool_id": "FURY-USDC",
       "pool_assets": [
         {
-          "id": "furya",
+          "id": "fanfury",
           "chain_id": "furya-1",
           "token_address": "",
           "symbol": "FURY",
@@ -100,7 +100,7 @@
         {
           "rewards_address": "furya132xsyfmxk2z2l94e93q95qqputc9euha38kqphzatp7as6qw7f6qx6fu2f",
 
-          "id": "furya",
+          "id": "fanfury",
           "symbol": "FURY",
           "name": "Fury",
           "logoURI": "https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png",
@@ -114,7 +114,7 @@
       "pool_id": "FURY-JUNO",
       "pool_assets": [
         {
-          "id": "furya",
+          "id": "fanfury",
           "chain_id": "furya-1",
           "token_address": "",
           "symbol": "FURY",

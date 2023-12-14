@@ -128,7 +128,6 @@ export function NavigationSidebar() {
             variant="menu"
             size="large"
             iconLeft={<IconWrapper icon={menu.icon} />}
-            target="_blank"
           >
             {menu.name}
           </Button>
@@ -139,7 +138,7 @@ export function NavigationSidebar() {
 
   const menuLinks = (
     <StyledListForLinks>
-      <Link href="/" passHref>
+      {/* <Link href="/" passHref>
         <Button
           as="a"
           variant="menu"
@@ -149,7 +148,7 @@ export function NavigationSidebar() {
         >
           Swap
         </Button>
-      </Link>
+      </Link> */}
       <Link href="/transfer" passHref>
         <Button
           as="a"
@@ -224,7 +223,7 @@ export function NavigationSidebar() {
     return (
       <StyledWrapperForMobile>
         <Inline align="center" justifyContent="space-between">
-          <Link href="/" passHref>
+          <Link href="/pools" passHref>
             <StyledDivForLogo as="a">
               <Logo data-logo="" width="37px" height="47px" />
             </StyledDivForLogo>
@@ -285,7 +284,7 @@ export function NavigationSidebar() {
   return (
     <StyledWrapper>
       <StyledMenuContainer>
-        <Link href="/" passHref>
+        <Link href="/pools" passHref>
           <StyledDivForLogo as="a">
             <Logo data-logo="" width="37px" height="47px" />
             <div data-logo-label="">
