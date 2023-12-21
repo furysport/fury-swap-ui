@@ -28,4 +28,4 @@ function createAlertPricingServiceIsDown() {
   }
 }
 
-export const pricingServiceIsDownAlert = createAlertPricingServiceIsDown()
+// export const pricingServiceIsDownAlert = createAlertPricingServiceIsDown()

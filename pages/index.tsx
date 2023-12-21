@@ -1,30 +1,34 @@
-import { useEffect } from 'react';
-import { useRouter } from 'next/router';
-import { AppLayout, PageHeader } from 'components';
-import { styled } from 'junoblocks';
-import { APP_NAME } from '../util/constants';
+import { AppLayout, PageHeader } from 'components'
+import { TokenSwapModule } from 'features/swap'
+import { styled } from 'junoblocks'
+import React from 'react'
+
+import { APP_NAME } from '../util/constants'
+
+function getInitialTokenPairFromSearchParams() {
+  const params = new URLSearchParams(location.search)
+  const from = params.get('from')
+  const to = params.get('to')
+  return from || to ? ([from, to] as const) : undefined
+}
 
 export default function Home() {
-  const router = useRouter();
-
-  useEffect(() => {
-    // Redirect to /pools when the component mounts during liquidity bootstrapping period.
-    router.push('/pools');
-  }, [router]);
-
   return (
     <AppLayout>
       <StyledContainer>
         <PageHeader
-          title="Note"
-          subtitle={`Swaps will be enabled on ${APP_NAME} after liquidity bootstrapping.`}
+          title="Swap"
+          subtitle={`Swap between your favorite assets on ${APP_NAME}.`}
+        />
+        <TokenSwapModule
+          initialTokenPair={getInitialTokenPairFromSearchParams()}
         />
       </StyledContainer>
     </AppLayout>
-  );
+  )
 }
 
 const StyledContainer = styled('div', {
   maxWidth: '53.75rem',
   margin: '0 auto',
-});
+})

@@ -138,7 +138,7 @@ export function NavigationSidebar() {
 
   const menuLinks = (
     <StyledListForLinks>
-      {/* <Link href="/" passHref>
+      <Link href="/" passHref>
         <Button
           as="a"
           variant="menu"
@@ -148,7 +148,7 @@ export function NavigationSidebar() {
         >
           Swap
         </Button>
-      </Link> */}
+      </Link>
       <Link href="/transfer" passHref>
         <Button
           as="a"
