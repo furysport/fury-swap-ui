@@ -1,7 +1,7 @@
 import { TokenInfo } from 'queries/usePoolsListQuery'
 
 import { fetchDollarPriceByTokenIds, fetchDollarPriceFromFurySwapPool } from './fetchDollarPriceByTokenIds'
-// import { pricingServiceIsDownAlert } from './pricingServiceIsDownAlert'
+import { pricingServiceIsDownAlert } from './pricingServiceIsDownAlert'
 
 export async function tokenDollarValueQuery(tokenIds: Array<TokenInfo['id']>) {
   if (!tokenIds?.length) {
@@ -25,7 +25,7 @@ export async function tokenDollarValueQuery(tokenIds: Array<TokenInfo['id']>) {
     // console.log(prices)
     return tokenIds.map((id): number => prices[id]?.usd || 0)
   } catch (e) {
-    // pricingServiceIsDownAlert()
+    pricingServiceIsDownAlert()
 
     throw e
   }
