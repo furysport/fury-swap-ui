@@ -63,6 +63,16 @@
           "decimals": 6,
           "native": true,
           "denom": "ufury"
+        },
+        {
+          "rewards_address": "furya1gk0vafqwkkzgddeea0ss3dsts57stzqq8nvut36scn5k359y5f2s8w3s72",
+          "id": "fanfury",
+          "symbol": "FURY",
+          "name": "Fury",
+          "logoURI": "https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png",
+          "decimals": 6,
+          "native": true,
+          "denom": "ufury"
         }
       ]
     },
@@ -99,16 +109,6 @@
       "rewards_tokens": [
         {
           "rewards_address": "furya132xsyfmxk2z2l94e93q95qqputc9euha38kqphzatp7as6qw7f6qx6fu2f",
-          "id": "fanfury",
-          "symbol": "FURY",
-          "name": "Fury",
-          "logoURI": "https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png",
-          "decimals": 6,
-          "native": true,
-          "denom": "ufury"
-        },
-        {
-          "rewards_address": "furya1gk0vafqwkkzgddeea0ss3dsts57stzqq8nvut36scn5k359y5f2s8w3s72",
           "id": "fanfury",
           "symbol": "FURY",
           "name": "Fury",
