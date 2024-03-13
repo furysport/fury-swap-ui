@@ -1,43 +1,73 @@
-import { SigningCosmWasmClient } from "@cosmjs/cosmwasm-stargate";
-import { DirectSecp256k1HdWallet } from "@cosmjs/proto-signing";
-import { GasPrice } from "@cosmjs/stargate";
+import { SigningCosmWasmClient } from '@cosmjs/cosmwasm-stargate'
+import { coin } from '@cosmjs/stargate'
 
-const rpc = 'rpc.furya.xyz'
-const adminPrivateKey = '2992593f994ce4456254d8f3b9238282a9cc7056a27f08ffe597607a683b133a';
-const pairContractAddress = 'furya1xqkp8x4gqwjnhemtemc5dqhwll6w6rrgpywvhka7sh8vz8swul9sy7c430';
+import { TokenInfo } from '../../queries/usePoolsListQuery'
+import {
+  createExecuteMessage,
+  createIncreaseAllowanceMessage,
+  validateTransactionSuccess,
+} from '../../util/messages'
 
-const wallet = await DirectSecp256k1HdWallet.fromMnemonic(
-    mnemonic, { 
-        prefix: "furya" // neutron, or terra
-    }); 
-    
-const firstAccount = await wallet.getAccounts();
-const walletAddress = firstAccount[0].address
-
-const signingClient = await SigningCosmWasmClient.connectWithSigner(
-    rpc, 
-    wallet, 
-    { gasPrice: GasPrice.fromString("0.1ufury") }
-)
-
-const start = async () => {
-    try {
-    	const swapMsg = {
-            contract: wasmSwapContractAddress,
-            msg: {
-                swap: {
-                    input_token: inputToken,
-                    input_amount: inputAmount,
-                    min_output: minOutput,
-                    expiration: expiration,
-                }
-            },
-            sender: adminAddress,
-            funds: [feeAmount],
-        };
-    } catch (error) {
-        console.error('An error occurred:', error);
-    }
+type DirectTokenSwapArgs = {
+  swapDirection: 'tokenAtoTokenB' | 'tokenBtoTokenA'
+  tokenAmount: number
+  price: number
+  slippage: number
+  senderAddress: string
+  swapAddress: string
+  tokenA: TokenInfo
+  client: SigningCosmWasmClient
 }
 
-start();
+export const directTokenSwap = async ({
+  tokenA,
+  swapDirection,
+  swapAddress,
+  senderAddress,
+  slippage,
+  price,
+  tokenAmount,
+  client,
+}: DirectTokenSwapArgs) => {
+  const minToken = Math.floor(price * (1 - slippage))
+
+  const swapMessage = {
+    swap: {
+      input_token: swapDirection === 'tokenAtoTokenB' ? 'Token1' : 'Token2',
+      input_amount: `${tokenAmount}`,
+      min_output: `${minToken}`,
+    },
+  }
+
+  if (!tokenA.native) {
+    const increaseAllowanceMessage = createIncreaseAllowanceMessage({
+      senderAddress,
+      tokenAmount,
+      tokenAddress: tokenA.token_address,
+      swapAddress,
+    })
+
+    const executeMessage = createExecuteMessage({
+      senderAddress,
+      contractAddress: swapAddress,
+      message: swapMessage,
+    })
+
+    return validateTransactionSuccess(
+      await client.signAndBroadcast(
+        senderAddress,
+        [increaseAllowanceMessage, executeMessage],
+        'auto'
+      )
+    )
+  }
+
+  return await client.execute(
+    senderAddress,
+    swapAddress,
+    swapMessage,
+    'auto',
+    undefined,
+    [coin(tokenAmount, tokenA.denom)]
+  )
+}
