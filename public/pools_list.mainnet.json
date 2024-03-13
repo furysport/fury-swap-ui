@@ -54,13 +54,14 @@
       "staking_address": "furya19pxu27yh84zm8lgm9h75kg0m9e22u36yac0swngwq633xyqfz47sndff6n",
       "rewards_tokens": [
         {
-          "rewards_address": "furya1hyt0vx4ccgc3wmzm6gaxtzf3grrna7t8h7wtfnemjm59ecckuywq8wnf04",
+          "rewards_address": "furya1w9rvtrhjrjjng7rj7n8fq2cgvseycsykvr3q9vh2glly2nrmurzse529rv",
+
           "id": "fanfury",
           "symbol": "FURY",
           "name": "Fury",
           "logoURI": "https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png",
           "decimals": 6,
-          "native": true,
+          "native": false,
           "denom": "ufury"
         }
       ]
@@ -97,13 +98,14 @@
       "staking_address": "furya15zzffsmue2myfdv8mmmeuuxkh7ne0fp8krc0rr794qy430e3285qt8yn4q",
       "rewards_tokens": [
         {
-          "rewards_address": "furya1g5xjl727tp9qjdmmrgz2y7jy4zkhsghkpjrva2ae5z90r6qxjl3q4anm97",
+          "rewards_address": "furya132xsyfmxk2z2l94e93q95qqputc9euha38kqphzatp7as6qw7f6qx6fu2f",
+
           "id": "fanfury",
           "symbol": "FURY",
           "name": "Fury",
           "logoURI": "https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/ufury.png",
           "decimals": 6,
-          "native": true,
+          "native": false,
           "denom": "ufury"
         }
       ]
